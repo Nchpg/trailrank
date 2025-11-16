@@ -45,8 +45,8 @@ document.addEventListener('DOMContentLoaded', () => {
             'dossard': 'Dossard',
             'nom': 'Nom',
             'categorie': 'Catégorie',
-            'temps': 'Temps',
             'tempspuce': 'Temps puce',
+            'ecart': 'Ecart',
             'placeparcategorie': 'Place par catégorie',
             'ecartparcategorie': 'Ecart par catégorie'
         };
@@ -57,8 +57,8 @@ document.addEventListener('DOMContentLoaded', () => {
             row.insertCell().textContent = runner.dossard;
             row.insertCell().textContent = runner.nom;
             row.insertCell().textContent = runner.categorie;
-            row.insertCell().textContent = runner.temps;
             row.insertCell().textContent = runner.tempspuce;
+            row.insertCell().textContent = runner.ecart;
             row.insertCell().textContent = runner.placeparcategorie;
             row.insertCell().textContent = runner.ecartparcategorie;
 
@@ -66,8 +66,8 @@ document.addEventListener('DOMContentLoaded', () => {
             row.cells[1].setAttribute('data-label', headerMap['dossard']);
             row.cells[2].setAttribute('data-label', headerMap['nom']);
             row.cells[3].setAttribute('data-label', headerMap['categorie']);
-            row.cells[4].setAttribute('data-label', headerMap['temps']);
-            row.cells[5].setAttribute('data-label', headerMap['tempspuce']);
+            row.cells[4].setAttribute('data-label', headerMap['tempspuce']);
+            row.cells[5].setAttribute('data-label', headerMap['ecart']);
             row.cells[6].setAttribute('data-label', headerMap['placeparcategorie']);
             row.cells[7].setAttribute('data-label', headerMap['ecartparcategorie']);
         });
